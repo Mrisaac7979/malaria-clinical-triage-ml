@@ -1,4 +1,4 @@
-# Malaria Clinical Triage — Binary Classification Pipeline
+# Malaria Clinical Triage - Binary Classification Pipeline
 
 **Lightweight ML for Disease Prediction in Rural Health Settings (Togo)**
 
@@ -7,13 +7,12 @@
 ## Overview
 
 This project implements the malaria probability triage module described in Phase 2 of the
-research proposal submitted to UPE/PPGEC (Universidade de Pernambuco). It demonstrates
-that clinical and demographic features alone — without laboratory data — can support accurate
+research proposal. It demonstrates
+that clinical and demographic features alone without laboratory data can support accurate
 malaria triage using ensemble ML methods, consistent with the 2025 systematic review
 published on medRxiv (DOI: 10.1101/2025.08.03.25332923).
 
 **Author:** Komi Isaac Junior HOUNBO
-**Target program:** UPE / PPGEC — Escola Politécnica de Pernambuco
 
 ---
 
@@ -33,9 +32,9 @@ in low-resource settings, as specified in the research proposal Phase 2).
 
 | Model | AUC-ROC (5-Fold CV) | Sensitivity (test) | AUC-ROC (test) |
 |-------|--------------------:|-------------------:|---------------:|
-| Logistic Regression | 0.9423 ± 0.016 | — | — |
-| Random Forest | 0.9385 ± 0.017 | — | — |
-| Gradient Boosting | 0.9300 ± 0.021 | — | — |
+| Logistic Regression | 0.9423 ± 0.016 | - | - |
+| Random Forest | 0.9385 ± 0.017 | - | - |
+| Gradient Boosting | 0.9300 ± 0.021 | - | - |
 | **Ensemble (Soft Vote)** | **0.9402 ± 0.018** | **92.4%** | **0.9232** |
 
 Decision threshold adjusted from 0.50 to 0.40 to meet the clinical sensitivity requirement.
@@ -60,7 +59,7 @@ malaria and non-malaria fever presentations in sub-Saharan Africa.
 | `frissons` | Binary | Chills (0/1) |
 | `fatigue` | Binary | Fatigue (0/1) |
 | `douleurs_articulaires` | Binary | Joint pain (0/1) |
-| `saison_pluvieuse` | Binary | Rainy season (0/1) — malaria risk proxy |
+| `saison_pluvieuse` | Binary | Rainy season (0/1) - malaria risk proxy |
 | `frequence_resp` | Continuous | Respiratory rate (breaths/min) |
 | `spo2_pct` | Continuous | Oxygen saturation (%) |
 | `antecedent_palu` | Binary | Previous malaria episode (0/1) |
@@ -91,12 +90,12 @@ malaria_project/
 
 ## How to Run
 
-### Option A — Google Colab (recommended)
+### Option A - Google Colab (recommended)
 1. Upload `Malaria_Clinical_Triage_ML.ipynb` to [colab.research.google.com](https://colab.research.google.com)
 2. `Runtime → Run all`
 3. No local installation required
 
-### Option B — Local
+### Option B - Local
 ```bash
 pip install scikit-learn pandas numpy matplotlib seaborn imbalanced-learn
 python generate_data.py
@@ -118,7 +117,7 @@ python train_evaluate.py
 
 ---
 
-## Research Perspective (UPE/PPGEC Master's)
+## Research Perspective
 
 This prototype will be extended in the Master's research to:
 - Real anonymized clinical records from Togolese rural health facilities (2019-2024),
